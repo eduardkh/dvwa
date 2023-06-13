@@ -1,4 +1,5 @@
 import requests
+import pprint
 from bs4 import BeautifulSoup
 
 # make a GET request to the login page
@@ -27,4 +28,4 @@ response_dict = {
     'body': response.text
 }
 
-print(response_dict)
+pprint.pprint(response_dict)
